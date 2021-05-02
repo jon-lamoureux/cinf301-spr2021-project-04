@@ -1,3 +1,10 @@
+/*
+ *  Added "morgan" to log as developer
+ *
+ *  Also added "Notes" from example at:
+ *     https://www.callicoder.com/node-js-express-mongodb-restful-crud-api-tutorial/
+ *
+ */
 const morgan = require("morgan");
 const express = require("express");
 const mongoose = require("mongoose");
