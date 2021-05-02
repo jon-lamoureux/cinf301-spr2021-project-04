@@ -12,15 +12,15 @@ router.post('/notes', notes.create);
 // Retrieve all Notes
 // NOTE: Only this one uses verify!
 //router.get('/notes', middleware.verify, notes.findAll);
-router.get('/notes', notes.findAll);
+router.get('/notes', middleware.verify, notes.findAll);
 
 // Retrieve a single Note with noteId
-router.get('/notes/:noteId', notes.findOne);
+router.get('/notes/:noteId', middleware.verify, notes.findOne);
 
 // Update a Note with noteId
-router.put('/notes/:noteId', notes.update);
+router.put('/notes/:noteId', middleware.verify, otes.update);
 
 // Delete a Note with noteId
-router.delete('/notes/:noteId', notes.delete);
+router.delete('/notes/:noteId', middleware.verify, notes.delete);
 
 module.exports = router;
