@@ -18,7 +18,7 @@ router.get('/notes', middleware.verify, notes.findAll);
 router.get('/notes/:noteId', middleware.verify, notes.findOne);
 
 // Update a Note with noteId
-router.put('/notes/:noteId', middleware.verify, otes.update);
+router.put('/notes/:noteId', middleware.verify, notes.update);
 
 // Delete a Note with noteId
 router.delete('/notes/:noteId', middleware.verify, notes.delete);
