@@ -1,0 +1,5 @@
+curl.exe -X POST -H "Content-Type: Application/json" -d '{\"username\":\"Richard\", \"userbirthday\":\"5-9-1990\", \"userid\":\"1\", \"userlocation\":\"Florida\",\"allowemails\":\"1\"}' http://localhost:2400/api/profiles
+curl.exe -X POST -H "Content-Type: Application/json" -d '{\"username\":\"Herbert\", \"userbirthday\":\"2-2-1954\", \"userid\":\"2\", \"userlocation\":\"Maine\",\"allowemails\":\"0\"}' http://localhost:2400/api/profiles
+curl.exe -X POST -H "Content-Type: Application/json" -d '{\"username\":\"Ali\", \"userbirthday\":\"8-5-2000\", \"userid\":\"3\", \"userlocation\":\"California\",\"allowemails\":\"1\"}' http://localhost:2400/api/profiles
+curl.exe -X POST -H "Content-Type: Application/json" -d '{\"username\":\"Zeke\", \"userbirthday\":\"4-8-1992\", \"userid\":\"4\", \"userlocation\":\"Texas\",\"allowemails\":\"0\"}' http://localhost:2400/api/profiles
+curl.exe -X POST -H "Content-Type: Application/json" -d '{\"username\":\"Christopher\", \"userbirthday\":\"1-12-2002\", \"userid\":\"5\", \"userlocation\":\"Alabama\",\"allowemails\":\"1\"}' http://localhost:2400/api/profiles
