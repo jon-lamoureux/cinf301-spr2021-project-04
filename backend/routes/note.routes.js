@@ -7,7 +7,7 @@ const middleware = require('../middlewares');
 const notes = require('../controllers/note.controller.js');
 
 // Create a new Note
-router.post('/notes', notes.create);
+router.post('/notes', middleware.verify, notes.create);
 
 // Retrieve all Notes
 // NOTE: Only this one uses verify!
