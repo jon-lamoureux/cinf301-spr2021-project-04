@@ -15,6 +15,7 @@ const app = express();
 // Added Note route
 const authRoute = require('./routes/auth');
 const noteRoute = require('./routes/note.routes.js');
+const profileRoute = require('./routes/profile.routes.js');
 const dbConfig = require('./config/database.config.js');
 
 app.use(morgan('dev'));
@@ -28,6 +29,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use('/api', authRoute);
 app.use('/api', noteRoute);
+app.use('/api', profileRoute);
 
 // Have mongoose work as promise
 mongoose.Promise = global.Promise;
