@@ -36,7 +36,10 @@ function App() {
   )
 }
 App.propTypes = {
-	username: PropTypes.string
+	username: PropTypes.string,
+	userbirthday: PropTypes.string,
+	userlocation: PropTypes.string,
+	userid: PropTypes.number
 };
 
 export default App;
