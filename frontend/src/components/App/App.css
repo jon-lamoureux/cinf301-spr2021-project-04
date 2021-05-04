@@ -1,3 +1,15 @@
 .wrapper {
     padding: 15px;
 }
+h1 {
+	text-align: center;
+}
+.col {
+    padding: 10px;
+    background-color: rgba(0,0,0,0.1);
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+.container {
+	margin-top: 10px;
+}
